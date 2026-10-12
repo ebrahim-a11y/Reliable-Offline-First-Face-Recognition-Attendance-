@@ -1,0 +1,227 @@
+{
+  "device": "Samsung Galaxy S9+ (SM-G965F), Android 10 (SDK 29)",
+  "runs": [
+    {
+      "code": "C",
+      "description": "Reconnection after normal recording",
+      "fault": "none",
+      "n": 300,
+      "unique_ids": 300,
+      "sequence_intact": 300,
+      "arrival_order_inversions": 0,
+      "redeliveries": 300,
+      "max_delivery_count": 2,
+      "events_redelivered": 300,
+      "record_span_s": 2.97,
+      "record_ms_per_event": 9.94,
+      "sync_span_s": 42.1,
+      "sync_ms_per_event": 140.8,
+      "longest_arrival_gaps_s": [
+        0.5,
+        0.4
+      ],
+      "lag_s": {
+        "mean": 27.5,
+        "min": 7.94,
+        "max": 47.1
+      },
+      "negative_lag": 0,
+      "whole_second_timestamps": 0
+    },
+    {
+      "code": "B",
+      "description": "Offline recording (airplane mode), then reconnection",
+      "fault": "airplane mode",
+      "n": 300,
+      "unique_ids": 300,
+      "sequence_intact": 300,
+      "arrival_order_inversions": 0,
+      "redeliveries": 300,
+      "max_delivery_count": 2,
+      "events_redelivered": 300,
+      "record_span_s": 2.52,
+      "record_ms_per_event": 8.41,
+      "sync_span_s": 52.7,
+      "sync_ms_per_event": 176.4,
+      "longest_arrival_gaps_s": [
+        1.6,
+        1.4
+      ],
+      "lag_s": {
+        "mean": 38.2,
+        "min": 17.66,
+        "max": 67.9
+      },
+      "negative_lag": 0,
+      "whole_second_timestamps": 0
+    },
+    {
+      "code": "D",
+      "description": "Duplicate delivery (re-send of all synchronized events)",
+      "fault": "none",
+      "n": 300,
+      "unique_ids": 300,
+      "sequence_intact": 300,
+      "arrival_order_inversions": 0,
+      "redeliveries": 300,
+      "max_delivery_count": 2,
+      "events_redelivered": 300,
+      "record_span_s": 2.93,
+      "record_ms_per_event": 9.8,
+      "sync_span_s": 52.7,
+      "sync_ms_per_event": 176.3,
+      "longest_arrival_gaps_s": [
+        1.6,
+        1.2
+      ],
+      "lag_s": {
+        "mean": 26.6,
+        "min": 4.42,
+        "max": 54.2
+      },
+      "negative_lag": 0,
+      "whole_second_timestamps": 0
+    },
+    {
+      "code": "E",
+      "description": "Connectivity lost during synchronization",
+      "fault": "airplane mode mid-sync",
+      "n": 300,
+      "unique_ids": 300,
+      "sequence_intact": 300,
+      "arrival_order_inversions": 0,
+      "redeliveries": 0,
+      "max_delivery_count": 1,
+      "events_redelivered": 0,
+      "record_span_s": 2.71,
+      "record_ms_per_event": 9.06,
+      "sync_span_s": 109.5,
+      "sync_ms_per_event": 366.1,
+      "longest_arrival_gaps_s": [
+        34.4,
+        3.1
+      ],
+      "lag_s": {
+        "mean": 73.3,
+        "min": 10.04,
+        "max": 116.8
+      },
+      "negative_lag": 0,
+      "whole_second_timestamps": 0
+    },
+    {
+      "code": "F",
+      "description": "Transient server rejection",
+      "fault": "40% rejected before storage",
+      "n": 300,
+      "unique_ids": 300,
+      "sequence_intact": 300,
+      "arrival_order_inversions": 0,
+      "redeliveries": 0,
+      "max_delivery_count": 1,
+      "events_redelivered": 0,
+      "record_span_s": 3.82,
+      "record_ms_per_event": 12.78,
+      "sync_span_s": 514.5,
+      "sync_ms_per_event": 1720.9,
+      "longest_arrival_gaps_s": [
+        34.8,
+        34.2
+      ],
+      "lag_s": {
+        "mean": 286.0,
+        "min": 7.83,
+        "max": 518.6
+      },
+      "negative_lag": 0,
+      "whole_second_timestamps": 0
+    },
+    {
+      "code": "ACK",
+      "description": "Acknowledgement loss",
+      "fault": "30% stored but reported as failed",
+      "n": 300,
+      "unique_ids": 300,
+      "sequence_intact": 300,
+      "arrival_order_inversions": 1,
+      "redeliveries": 111,
+      "max_delivery_count": 5,
+      "events_redelivered": 78,
+      "record_span_s": 2.65,
+      "record_ms_per_event": 8.86,
+      "sync_span_s": 277.3,
+      "sync_ms_per_event": 927.4,
+      "longest_arrival_gaps_s": [
+        17.9,
+        16.6
+      ],
+      "lag_s": {
+        "mean": 144.5,
+        "min": 6.75,
+        "max": 281.8
+      },
+      "negative_lag": 0,
+      "whole_second_timestamps": 1
+    },
+    {
+      "code": "KILL-ACK",
+      "description": "App process killed mid-sync",
+      "fault": "app killed + 30% ack loss",
+      "n": 300,
+      "unique_ids": 300,
+      "sequence_intact": 300,
+      "arrival_order_inversions": 0,
+      "redeliveries": 124,
+      "max_delivery_count": 7,
+      "events_redelivered": 80,
+      "record_span_s": 2.58,
+      "record_ms_per_event": 8.62,
+      "sync_span_s": 393.6,
+      "sync_ms_per_event": 1316.5,
+      "longest_arrival_gaps_s": [
+        67.8,
+        48.7
+      ],
+      "lag_s": {
+        "mean": 235.3,
+        "min": 7.96,
+        "max": 399.0
+      },
+      "negative_lag": 0,
+      "whole_second_timestamps": 0
+    },
+    {
+      "code": "KILL",
+      "description": "App process killed mid-sync",
+      "fault": "app killed",
+      "n": 300,
+      "unique_ids": 300,
+      "sequence_intact": 300,
+      "arrival_order_inversions": 0,
+      "redeliveries": 1,
+      "max_delivery_count": 2,
+      "events_redelivered": 1,
+      "record_span_s": 2.81,
+      "record_ms_per_event": 9.39,
+      "sync_span_s": 53.8,
+      "sync_ms_per_event": 179.9,
+      "longest_arrival_gaps_s": [
+        14.6,
+        0.8
+      ],
+      "lag_s": {
+        "mean": 40.3,
+        "min": 8.57,
+        "max": 59.6
+      },
+      "negative_lag": 0,
+      "whole_second_timestamps": 0
+    }
+  ],
+  "totals": {
+    "n": 2400,
+    "redeliv": 1136,
+    "seq": 2400,
+    "inv": 1
+  }
+}
