@@ -1,0 +1,8 @@
+{
+  "n_templates": 10,
+  "n_trials": 200,
+  "mean_ms": 0.0842,
+  "sd_ms": 0.0192,
+  "min_ms": 0.0536,
+  "max_ms": 0.1643
+}

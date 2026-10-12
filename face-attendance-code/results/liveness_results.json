@@ -1,0 +1,35 @@
+{
+  "method": "Block-wise Local Binary Pattern histograms (4x4 grid, P=8, R=1, uniform) + RBF-kernel SVM (classical CPU baseline; NOT the MobileNetV2 transfer-learning model of the base paper)",
+  "dataset": "NUAA Photograph Imposter Database (Tan et al. 2010), official face-detected release, official train/test split",
+  "train_n": {
+    "live": 1743,
+    "spoof": 1748,
+    "total": 3491
+  },
+  "test_n": {
+    "live": 3362,
+    "spoof": 5761,
+    "total": 9123
+  },
+  "accuracy_pct": 88.29,
+  "accuracy_95ci_pct": [
+    87.62,
+    88.94
+  ],
+  "bpcer_pct": 8.51,
+  "apcer_pct": 13.57,
+  "acer_pct": 11.04,
+  "hter_pct_at_default_threshold": 11.04,
+  "eer_pct": 11.54,
+  "live_detection_rate_pct": 91.49,
+  "spoof_rejection_rate_pct": 86.43,
+  "live_correct_count": 3076,
+  "spoof_correct_count": 4979,
+  "latency_ms_feature_extraction": {
+    "n": 9123,
+    "mean": 2.2441,
+    "sd": 0.281,
+    "min": 1.8277,
+    "max": 9.0202
+  }
+}

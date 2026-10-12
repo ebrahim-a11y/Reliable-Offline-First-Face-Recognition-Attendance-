@@ -1,0 +1,52 @@
+{
+  "model": "SFace (MobileFaceNet backbone, OpenCV Zoo, Apache-2.0)",
+  "detector": "YuNet (OpenCV Zoo, Apache-2.0)",
+  "dataset": "LFW-funneled subset (Huang et al. 2007), locally-generated genuine/impostor pairs",
+  "n_genuine_pairs": 113,
+  "n_impostor_pairs": 160,
+  "n_total_pairs": 273,
+  "threshold_tau_star": 0.2239,
+  "accuracy_pct": 95.6,
+  "accuracy_95ci_pct": [
+    92.48,
+    97.47
+  ],
+  "eer_pct": 4.4,
+  "far_pct": 4.38,
+  "frr_pct": 4.42,
+  "expected_errors_per_6000_pairs": 263.7,
+  "confusion": {
+    "TP": 108,
+    "FN": 5,
+    "TN": 153,
+    "FP": 7
+  },
+  "genuine_score_stats": {
+    "mean": 0.6379,
+    "sd": 0.1684,
+    "min": -0.0731,
+    "max": 0.9458
+  },
+  "impostor_score_stats": {
+    "mean": 0.0791,
+    "sd": 0.0886,
+    "min": -0.177,
+    "max": 0.3137
+  },
+  "latency_ms": {
+    "detection": {
+      "n": 561,
+      "mean": 3.795,
+      "sd": 0.739,
+      "min": 2.6,
+      "max": 18.132
+    },
+    "embedding": {
+      "n": 561,
+      "mean": 11.156,
+      "sd": 2.225,
+      "min": 9.735,
+      "max": 58.317
+    }
+  }
+}
